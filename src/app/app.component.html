@@ -22,6 +22,13 @@
     </ul>
   </div>
 </nav>
+<div>
+  <h1>{{message}}</h1>
+</div>
+
+<app-greeting (childevent)="message=$event"  [parentData]="name" ></app-greeting>
+<app-employee-list-it></app-employee-list-it>
+<app-employeedetail></app-employeedetail>
 </body>
 </html>
  

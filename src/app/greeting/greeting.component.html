@@ -1,0 +1,26 @@
+<input [(ngModel)]="name" type="text" >
+<h2>Welcome {{name}}</h2>
+
+<h2 *ngIf="false; else elsePart">
+    Checking ngIf
+</h2>
+<ng-template #elsePart>
+    <h2>HiddenPart of else</h2>
+</ng-template>
+
+<h3>Ng For -----------------</h3>
+
+<div *ngFor="let color of colors; odd as o">
+<h2>{{o}} {{color}}</h2>
+</div>
+
+<h3>to take data from app component</h3>
+
+<h2>Hello {{name2}}</h2>
+<button (click)="firevent()">Send Event</button>
+
+<h2>{{50 | currency:"GBP"}}</h2>
+
+
+
+<!-- <button (click)="getLogValue(MyInput.value)" >greet</button> -->
